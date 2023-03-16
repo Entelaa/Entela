@@ -1,0 +1,20 @@
+package joojo;
+
+public class ligjerata2 {
+
+	public static void main(String[] args) {
+		int [][] a = {{5,4},
+				      {3,4},
+				      {2,4},} ;
+		for(int row=0;row<a.length;row++) {
+			for(int column=0;column < a.length;column++) {
+				System.out.println(a[row][column]+" ");
+			}
+			
+			System.out.println();
+		}
+		
+
+	}
+
+}

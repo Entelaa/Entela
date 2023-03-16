@@ -1,0 +1,53 @@
+package joojo;
+
+public class ligjerata2 {
+
+	public static void main(String[] args) {
+		/*int [][] a = {{5,4}, {3,4}, {2,4},} ;
+		for(int row =0; row <a.length; row++) {
+			for(int column=0; column < a[row].length; column++) {
+				System.out.println(a[row][column]+" ");
+			}
+	}
+		//maddhesia e vargut
+		int[][] vargu = {
+				{3,5,7},
+				{8,9,6},
+				{4,6,7},};
+		
+		
+		System.out.println("Madhesia e vargut eshte: "+vargu.length+"x"+vargu[0].length);
+		for (int i = 0; i < vargu.length; i++) {
+		    for (int j = 0; j < vargu[i].length; j++) {
+		        System.out.print(vargu[i][j] + " ");
+		    }
+		    }*/
+		int [][] a = new int[3][3];
+		for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+            	
+        a[i][j]=(int)Math.random()*10;
+            	}
+            }
+       System.out.println("vargu:");
+       
+       for (int i = 0; i < a.length; i++) {
+           for (int j = 0; j < a[i].length; j++) {
+               System.out.print(a[i][j] + " ");
+           }
+           System.out.println();
+       }
+
+      
+       int total = 5;
+       for (int i = 0; i < a.length; i++) {
+           for (int j = 0; j < a[i].length; j++) {
+               total += a[i][j];
+           }
+       }
+
+     
+       System.out.println("Shuma e elementeve të vargut: " + total);
+   
+	}
+}

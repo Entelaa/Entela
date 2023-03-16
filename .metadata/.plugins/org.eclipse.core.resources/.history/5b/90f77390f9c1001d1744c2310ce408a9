@@ -1,0 +1,96 @@
+package joojo;
+import java.util.Scanner;
+public class Excerises {
+
+	public static void main(String[] args) {
+		//Excerise7.1
+		 /*  Scanner input = new Scanner(System.in);
+		        System.out.print("Enter the total number of students: ");
+		        int numStudents = input.nextInt();//duke i dhene vleres shfryetzuesi me ane t skanerit
+
+		        int[] scores = new int[numStudents];//vargu i numStudents
+		        for (int i = 0; i < numStudents; i++) {
+		            System.out.print("Enter score for student " + (i+1) + ": ");// e kena i+1 me ja fillu indeksi prej 1 jo prej 0;
+		            scores[i] = input.nextInt();//lexon piket e studentit nga shfryezuesi dhe i vendos ato ne indeksi i dhe vargun score
+		        }
+
+		        int bestScore = findBestScore(scores);
+
+		        for (int i = 0; i < numStudents; i++) {
+		            char grade = assignGrade(scores[i], bestScore);
+		            System.out.println("Student " + (i+1) + " score is " + scores[i] + " and grade is " + grade);
+		        }
+
+		        input.close();
+		    }
+
+		    public static int findBestScore(int[] scores) {
+		        int best = scores[0];
+		        for (int i = 1; i < scores.length; i++) {
+		            if (scores[i] > best) {
+		                best = scores[i];
+		            }
+		        }
+		        return best;
+		    }
+
+		    public static char assignGrade(int score, int bestScore) {
+		        if (score >= bestScore - 5) {
+		            return 'A';
+		        } else if (score >= bestScore - 10) {
+		            return 'B';
+		        } else if (score >= bestScore - 15) {
+		            return 'C';
+		        } else if (score >= bestScore - 20) {
+		            return 'D';
+		        } else {
+		            return 'F';
+		        }*/
+		
+		//Excerises 7.2
+		/*Scanner a = new Scanner(System.in);
+        int[] numbers = new int[11];
+
+        // Read in 11 integers
+        for (int i = 0; i < 11; i++) {
+            System.out.print("Enter integer " + (i+1) + ": ");
+            numbers[i] = a.nextInt();
+        }
+
+        // Compare each integer with the 11th integer
+        int eleventh = numbers[10];
+        for (int i = 0; i < 10; i++) {
+            int number = numbers[i];
+            if (number > eleventh) {
+                System.out.println(number + " is greater than " + eleventh);
+            } else if (number < eleventh) {
+                System.out.println(number + " is smaller than " + eleventh);
+            } else {
+                System.out.println(number + " is equal to " + eleventh);
+            }
+        }*/
+		
+		
+		
+		   int[] b = new int[51];//kriju nje varg
+
+	        // read integers from user input until 0 is entered
+	        Scanner a= new Scanner(System.in);//e kena kriju ni ojekt 
+	        System.out.println("Enter integers between 1 and 50, ending with 0:");
+	        int n = a.nextInt();//vlerat qe merr n nga skaneri
+	        while (n != 0) {   // Nëse numri i dhënë nga përdoruesi është midis 1 dhe 50 (përfshirë), atëherë numri i shfaqjeve për këtë numër rritet me një.
+	            if (n >= 1 && n <= 10) {
+	                b[n]++;//rritet per nje
+	            }
+	            n = a.nextInt();
+	        }
+
+	        // print the counts for each integer
+	        for (int i = 1; i <= 10; i++) { //Blloku i tretë i kodit përdor një for loop për të printuar numrin dhe numrin e shfaqjeve për secilin numër prej 1 deri në 50
+	            System.out.println(i + " occurs " + b[i] + " time(s)");
+	        }
+		    }
+		
+
+	}
+
